@@ -24,5 +24,5 @@
         <link href="<?php echo $module_css; ?>" rel="stylesheet">
     <?php endif; ?>
 </head>
-<body>
-<div class="d-flex" id="wrapper">
+<body class="<?php echo isset($body_class) ? $body_class : ''; ?>">
+<div class="d-flex <?php echo isset($wrapper_class) ? $wrapper_class : ''; ?>" id="wrapper">
