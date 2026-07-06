@@ -1,0 +1,96 @@
+/* 
+ * Global stylesheet for Student Management Portal
+ * Extends Bootstrap 5 with premium aesthetics and utilities.
+ */
+
+:root {
+    --primary-color: #4361ee;
+    --primary-light: #4895ef;
+    --secondary-color: #3f37c9;
+    --success-color: #4cc9f0;
+    --danger-color: #f72585;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --sidebar-width: 260px;
+    --sidebar-bg: #1e1e2f;
+    --card-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--sidebar-bg);
+    color: #fff;
+    transition: all var(--transition-speed);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all var(--transition-speed);
+}
+
+#sidebar ul li a:hover, #sidebar ul li.active > a {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Main Content Area */
+#content {
+    width: calc(100% - var(--sidebar-width));
+    position: relative;
+    float: right;
+    transition: all var(--transition-speed);
+    min-height: 100vh;
+}
+
+/* Utility Cards */
+.card-premium {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card-premium:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar customizations */
+.navbar-custom {
+    background-color: #fff;
+    box-shadow: var(--card-shadow);
+}
+
+/* Footer customizations */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #e9ecef;
+}

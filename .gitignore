@@ -1,0 +1,27 @@
+# Ignore vendor packages
+/vendor/
+/node_modules/
+
+# Ignore IDE specific config directories
+/.vscode/
+/.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment config credentials
+.env
+.env.local
+.env.*.local
+
+# Ignore logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
